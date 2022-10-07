@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Design on all buttons */
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: 0;
+    text-decoration: none;  
+    padding: 0.6rem 1.3rem;
+}
+
+img {
+    max-width: 100%;    
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.header img {
+    width: 300px;
+}
+
+/* Navigation */
+
+.main-nav ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 150px);
+    justify-content: center;
+}
+
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.1rem;  
+}
+
+.main-nav a:hover {
+    background: #fff;
+    transition: width 1s, height 1s, background-color 1s, transform 0.1s;
+}
+
+.main-nav img {
+    width: 200px;
+}
+/* Top container with img */
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'showcase showcase '
+        'showcase showcase ';
+}
+
+.showcase {
+    grid-area: showcase;
+    min-height: 500px;
+    background-image: url("../imgs/09-day.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-left: 3rem;
+    color: #fff;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-left: 4rem;
+    color: #fff;
+}
+
+.showcase a {
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.showcase a:hover {
+    background-color: #ccc;
+    transition: width 1s, height 1s, background-color 1s, transform 0.1s;
+    color: #333;
+}
+
+/* Two boxes under showcase */
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.box  {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.box a:hover {
+    background-color: #ccc;
+    transition: width 1s, height 1s, background-color 1s, transform 0.1s;
+    color: #333;
+}
+
+.box p {
+    margin-bottom: 2rem;
+}
+
+.box1 {
+    background-image: url('../imgs/windmill.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.box2 {
+    background-image: url('../imgs/codelock.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Footer  */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    margin: 20rem auto 0 auto;
+    width: 100%;
+    height: 20rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+.information aside {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.information__logo {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Booking page  */
+
+.wrapper-reserve {
+    display: flex;
+    margin: 0 6rem 0 6rem;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.general__information__times {
+    text-align: center;
+    font-size: 30px;
+}
+
+.general__information__times aside {
+    font-size: 20px;
+}
+
+.general__information {
+    background-image: url(../imgs/05-night.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+    height: 30rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking__information {
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+}
+
+.box-pictures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin-top: 3rem;
+}
+
+.box-pictures img {
+    border: 10px solid #333;
+}
+
+.reservation__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.reservation {
+    background-color: #333;
+    height: 20rem;
+    color: #fff;
+}
+
+.stay {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+.stay1 {
+    background-image: url("../imgs/01-day.jpg");
+}
+.stay2 {
+    background-image: url("../imgs/05-night.jpg");
+}
+.stay3 {
+    background-image: url("../imgs/05-day.jpg");
+}
+
+.stay p {
+    position: absolute;
+    font-size: 40px;
+    left: 0;
+    right: 0;
+    top: 20px;
+}
+
+.stay a {
+    border: 1px solid black;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.stay a:hover {
+    background-color: rgb(87, 85, 85);
+    transition: width 1s, height 1s, background-color 1s, transform 0.1s;
+}
+
+input {
+    padding: 0px;
+    font-size: 18px;
+    border-width: 0px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px rgba(66,66,66,.37);
+    font-family: 'Poppins', sans-serif;
+}
+
+select {
+    padding: 0px;
+    font-size: 18px;
+    border-width: 0px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px rgba(66,66,66,.37);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+
+/* About us page */
+
+.top-container-about-us {
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    background-image: url(../imgs/08-night.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.title p {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    gap: 10rem;
+}
+.cards h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: #333;
+}
+
+.card {
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px ;
+    margin: 10px 15px;
+    background-image: url('../imgs/assistantrobot.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.card1 {
+    background-image: url('../imgs/assistantrobot.jpg');
+}
+
+.card2 {
+    background-image: url('../imgs/cleanerrobot.jpg');
+}
+
+.card3 {
+    background-image: url('../imgs/waitressrobot.jpg');
+}
+
+.about__workers {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about__workers h5 {
+    color: #333;
+    text-align: center;
+    font-size: 30px;
+    border-top: 2px solid black;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .wrapper-reserve {
+        margin: 0;
+    }
+
+    .box-pictures {
+        grid-template-columns: 1fr;
+    }
+
+    .box-pictures img {
+        border: 2px solid #333;
+    }
+
+    .booking__information {
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .reservation__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
